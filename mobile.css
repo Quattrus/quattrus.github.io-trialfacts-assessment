@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -34,94 +35,18 @@ body, html{
     line-height:1.5;
 }
 
-@media screen and (max-width: 75em) {
-    .body {
-        font-size:60%;
-    }
+body{
+    padding-bottom:30px;
 }
 
 .panes{
-    display:flex;
-    height: calc(100vh - 20px);
-}
-
-@media screen and (max-width:75em){
-    .panes{
-        display:block;
-        padding-left:30px;
-        padding-right:20px;
-        padding-top:20px;
-    }
-}
-
-
-.left-pane{
-    flex: 0 0 65%;
-    padding:20px 20px 30px 100px;
-}
-
-@media screen and (max-width: 75em) {
-    .left-pane {
-        margin: 0;
-        padding: 0;
-    }
+    padding-left:30px;
+    padding-right:20px;
+    padding-top:20px;
 }
 
 .left-pane-text>h1{
     padding-bottom:20px;
-}
-
-.left-pane-text{
-    flex:1;
-    padding:20px;
-}
-
-.right-pane {
-    flex: 1;
-    padding-top: 60px;
-    padding-right: 30px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-}
-
-@media screen and (max-width: 75em) {
-    .right-pane {
-        flex: initial;
-        padding-top: initial;
-        padding-right: initial;
-        position: static;
-        top: auto;
-        bottom: auto;
-        right: auto;
-        width: auto;
-        display: block;
-        flex-direction: initial;
-    }
-}
-
-.introduction{
-    display:flex;
-}
-
-@media screen and (max-width: 75em) {
-    .introduction {
-        display:block;
-    }
-}
-
-.intro-text{
-    margin-right: 10px;
-}
-
-@media screen and (max-width: 75em) {
-    .intro-text {
-        margin:0px;
-    }
 }
 
 .intro-text>h3, .benefits-list>h3, .rights>h3, .sign-up, .who-can-participate>h3{
@@ -130,39 +55,17 @@ body, html{
 }
 
 .intro-image{
-    align-content:center;
-    width:100%;
+    padding-top:30px;
+    padding-bottom:30px;
 }
 
-@media screen and (max-width: 75em) {
-    .intro-image{
-        padding-top:30px;
-        padding-bottom:30px;
-        width:50%;
-    }
-}
-
-
-.intro-text, .intro-image{
-    flex: 1;
-}
-
-.overrun>p{
-    padding-top:15px;
-}
-
-.link-and-map{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-.right-pane-survey-link, .right-pane-locational-map{
-   width:90%;
-   margin: 0 auto;
+.right-pane{
+    padding-bottom:100px;
 }
 
 .right-pane-survey-link {
+    margin-top:30px;
+    margin-bottom:30px;
     padding-top:15px;
     display: flex;
     flex-direction:column;
@@ -211,18 +114,12 @@ body, html{
     transform: scale(1.05);
 }
 
+.right-pane-locational-map {
+    text-align:center;
+    height:400px;
+}
+
 .right-pane-locational-map>h2{
     padding-bottom:30px;
 }
 
-.right-pane-locational-map {
-    text-align:center;
-    height:400px;
-    flex-grow: 1;
-}
-
-@media screen and (max-width: 75em) {
-    .right-pane{
-        padding-bottom:100px;
-    }
-}
