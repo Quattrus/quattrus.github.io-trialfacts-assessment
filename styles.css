@@ -121,6 +121,14 @@ body, html{
     margin-right: 10px;
 }
 
+.overrun>ol>li{
+    padding-top:10px;
+}
+
+.overrun>ol>li:last-child{
+    padding-bottom:10px;
+}
+
 @media screen and (max-width: 55em){
     .intro-text {
         margin:0px;
