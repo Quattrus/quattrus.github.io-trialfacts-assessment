@@ -36,7 +36,7 @@ body, html{
     line-height:1.5;
 }
 
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 55em){
     .body {
         font-size:60%;
     }
@@ -47,7 +47,7 @@ body, html{
     height: calc(100vh - 20px);
 }
 
-@media screen and (max-width:75em){
+@media screen and (max-width: 55em){
     .panes{
         display:block;
         padding-left:30px;
@@ -62,7 +62,7 @@ body, html{
     padding:20px 20px 30px 100px;
 }
 
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 55em){
     .left-pane {
         margin: 0;
         padding: 0;
@@ -91,7 +91,7 @@ body, html{
     flex-direction: column;
 }
 
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 55em){
     .right-pane {
         flex: initial;
         padding-top: initial;
@@ -110,9 +110,10 @@ body, html{
     display:flex;
 }
 
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 55em){
     .introduction {
         display:block;
+        align-items:center;
     }
 }
 
@@ -120,7 +121,7 @@ body, html{
     margin-right: 10px;
 }
 
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 55em){
     .intro-text {
         margin:0px;
     }
@@ -136,11 +137,12 @@ body, html{
     width:100%;
 }
 
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 55em){
     .intro-image{
         padding-top:30px;
         padding-bottom:30px;
-        width:50%;
+        width:100%;
+        align-content:center;
     }
 }
 
