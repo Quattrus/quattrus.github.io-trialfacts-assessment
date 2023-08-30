@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+*,*::before, *::after{
+    box-sizing:inherit;
+}
+
+html{
+    position:relative;
+}
+
+html::before {
+    content: "";
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 1)), url("images/social_network.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+body, html{
+    box-sizing:border-box;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    scroll-behavior:smooth;
+    height: 100%;
+    line-height:1.5;
+}
+
+.panes{
+    display:flex;
+    height: calc(100vh - 20px);
+}
+
+.left-pane{
+    flex: 0 0 65%;
+    padding:20px 20px 30px 100px;
+}
+
+.left-pane-text>h1{
+    padding-bottom:20px;
+}
+
+.left-pane-text{
+    flex:1;
+    padding:20px;
+}
+
+.open-right-pane{
+    right:-100px;
+}
+
+@media (max-width: 767px) {
+    .open-right-pane {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+        background-color: #3498db;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .right-pane {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+        transition: right 0.3s ease;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+
+    .right-pane.open {
+        right: 0;
+    }
+}
+
+.right-pane {
+    flex: 1;
+    padding-top: 60px;
+    padding-right: 30px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0; 
+    width: 35%; 
+    display:flex;
+    flex-direction:column;
+}
+
+.introduction{
+    display:flex;
+}
+
+.intro-text{
+    margin-right: 10px;
+}
+
+.intro-text>h4, .benefits-list>h4, .rights>h4, .sign-up, .who-can-participate>h4{
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.intro-image{
+    align-content:center;
+    width:100%;
+}
+
+.intro-text, .intro-image{
+    flex: 1;
+}
+
+.overrun>p{
+    padding-top:15px;
+}
+
+.link-and-map{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.right-pane-survey-link, .right-pane-locational-map{
+   width:90%;
+   margin: 0 auto;
+}
+
+.right-pane-survey-link {
+    padding-top:15px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:rgb(85,76,57);
+    color:rgb(237, 237, 236);
+    border-radius: 5px;
+    align-items: center;
+}
+
+.right-pane-survey-link>h2{
+    text-align:center;
+    margin: 10px 0;
+}
+
+.right-pane-survey-link>p{
+    text-align:left;
+    margin: 1px 0;
+}
+
+.survey-button{
+    background-color:rgb(181,71,41);
+    color:white;
+    margin-top:30px;
+    margin-bottom:14px;
+    padding:15px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    font-size:inherit;
+    border-radius: 20px;
+    font-weight:700;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.survey-button:hover{
+    background-color:rgb(233, 153, 130);
+    color:rgb(77, 58, 30);
+    transform: scale(1.05);
+}
+
+.right-pane-locational-map {
+    text-align:center;
+    height:400px;
+    flex-grow: 1;
+}

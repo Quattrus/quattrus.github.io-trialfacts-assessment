@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trialfacts Assessment</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    </head>
+    <body>
+        <div class="panes">
+        <div class="left-pane">
+            <div class="left-pane-text">
+                <h1>Research Study Seeks Healthy Adults to Help Advance Medical Research</h1>
+                <p><b>Research Centre:</b> The University of Sydney</p>
+                <p><b>Location:</b> Cumberland Campus, The University of Sydney, 75 East St. Lidcombe, NSW</p>
+                <p><b>Lead Doctor:</b>  Dr  Maria Fiatarone Singh</p>
+                <p><b>Ethics Committee:</b> This study has been reviewed and approved by The University of Sydney Human Research Ethics Committee</p>
+                <div class="introduction">
+                    <div class="intro-text">
+                        <h4>Background</h4>
+                        <p>Mild Cognitive Impairment (MCI) causes a slight but noticeable decline in mental abilities, such as memory loss and impaired thinking. People with MCI have a much higher risk of going on to develop dementia. Previous research has shown that regular exercise may help improve brain health and prevent dementia.</p>      
+                    </div>
+                    <div class="intro-image">
+                        <img src="images/image1.png" alt="A picture of a woman in her 60s smiling.">
+                    </div>
+                </div>
+                <div class="overrun">
+                    <p>Previous research has shown that regular exercise may help improve brain health and prevent dementia. This study is comparing the effectiveness of three different kinds of exercise on memory and thinking abilities. </p>
+                    <p>This study seeks men and women aged 60+ who have noticed a slight decline in their memory and/or other mental abilities. Participants will be randomly assigned to one of three different exercise training groups: a) Strength training group, b) Aerobic training group, or c) Balance, toning & mobility training group.  Participants will be invited to attend 3 supervised exercise sessions per week for 12 months at the research site in Lidcombe.</p>
+                </div>
+                <div class="benefits-list">
+                    <h4>Benefits to Participation</h4>
+                    <ul>
+                        <li>You may experience an improvement in your memory and other aspects of your physical and mental well-being.</li>
+                        <li>You will receive supervised exercise training sessions 3 days per week for 1 year at no cost to yourself.</li>
+                        <li>You will receive a comprehensive geriatric assessment by the study physician and research team, including a physical examination, stress test, bone scan, MRI scan of your brain, metabolic and cardiovascular health profile, evaluation of your nutritional status, fitness assessment, fall risk assessment, and full evaluation of your cognitive function.</li>
+                        <li>You receive free parking at the research site.</li>
+                        <li>You will be helping to advance medical research.</li>
+                    </ul>
+                </div>
+                <div class="rights">
+                    <h4>Your Rights</h4>
+                    <ul>
+                        <li>If you decide to participate in the study and later feel that you no longer wish to be part of it, you may withdraw at any time.</li>
+                        <li>Your records relating to this study and any other information received will be kept strictly confidential, except as required by the law.</li>
+                        <li>Qualified health professionals will monitor your health as it relates to the study.</li>
+                    </ul>
+                </div>
+                <div class="who-can-participate">
+                    <h4>Who Can Participate?</h4>
+                    <p>Men and women aged 60+ years old who:</p>
+                    <ul>
+                        <li>Have noticed a slight decline in their memory and/or other mental abilities.</li>
+                        <li>Have not been diagnosed with dementia or a progressive neurological disease (such as Parkinson’s Disease)</li>
+                        <li>Are able to walk without the assistance of another person (use of assistive device is fine)</li>
+                        <li>Do not exercise more than 2.5 hours per week at moderate or vigorous intensity</li>
+                        <li>Are able to attend 3 exercise sessions per week at the research site over 12 months</li>
+                        <li>Do not plan to be away for 4 or more consecutive weeks over the next 12 months, and are not planning to move.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right-pane">
+            <div class="link-and-map">
+                <div class="right-pane-survey-link">
+                    <h2>Next Steps</h2>
+                    <p>1. Complete the brief questionnaire.<br> 2. Speak with a trial coordinator.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3XG_7t9t6NVXG6AuvVZVmB9hGsjXpdFkCwygDcPzfKGhDnA/viewform?usp=sf_link">
+                    <button type="button" class="survey-button">Click Here</button>
+                    </a>
+                </div>
+                <div class="right-pane-locational-map">
+                    <h2>Location</h2>
+                    <div id="map" style="height: 400px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="opnstrtmap.js"></script>
+    </body>
+</html>
